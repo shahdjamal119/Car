@@ -30,14 +30,14 @@ app.get('/user',async(req,res)=>{
 app.delete('/user',async(req,res)=>
 {
     console.log(req.body);
-    let sql = "DELETE FROM car WHERE c_id =?";
-    let result1=await db.connection.execute(sql,[req.body.ID]);
+    let sql = "DELETE FROM car WHERE id =?";
+    let result1=await db.connection.execute(sql,[req.body.id]);
     res.status(200).json("row deleted");
 })
 app.put( '/user',async(req,res)=>{  
         console .log(req.body);
-       let sql = "UPDATE car SET WHERE c_id = ? , can_be_return = ? ,year = ?, model = ?,  price = ? , color = ?  State =? "
-       let result = await db.connection.execute(sql,[req.body.c_id, req.body.can_be_return, req.body.year ,req.body.model , req.body.price ,req.body.color,req.body.State]);
+       let sql = "UPDATE car SET WHERE id = ? , can_be_return = ? ,year = ?, model = ?,  price = ? , color = ?  State =? "
+       let result = await db.connection.execute(sql,[req.body.id, req.body.can_be_return, req.body.year ,req.body.model , req.body.price ,req.body.color,req.body.State]);
         res.status(200).json("row edited");
      });
 
