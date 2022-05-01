@@ -30,7 +30,7 @@ app.get('/user',async(req,res)=>{
 app.delete('/user',async(req,res)=>
 {
     console.log(req.body);
-    let sql = "DELETE FROM car WHERE id =?";
+    let sql = "DELETE FROM car WHERE c_id =?";
     let result1=await db.connection.execute(sql,[req.body.ID]);
     res.status(200).json("row deleted");
 })
