@@ -22,6 +22,7 @@ app.post("/user", bodyParserurl, function (req, res) {
 app.listen(3000, () => {
     console.log("Server run in port 3000");
 });
+/*abood ghalayini*/
 app.get('/user',async(req,res)=>{
     console.log("access");
     let [result,rows] = await db.db.connection.execute("SELECT * FROM car");
