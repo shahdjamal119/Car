@@ -1,0 +1,114 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Merriweather+Sans:wght@300&family=Merriweather:ital,wght@1,900&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --main-color:rgb(23, 64, 142);
+    --second-color: #4674a2;
+    --text-color: #444;
+    --gradient: linear-gradient(rgb(23, 64, 142), #4674a2);
+}
+
+/* Home Page Tamara Awaisa*/
+.home{
+    background: url(img/carBackground.jpg);
+    width: 100%;
+    min-height: 120vh;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    /*grid-template-columns: repeat(2, 1fr);*/
+    opacity: 0.9;
+}
+
+.text h1{
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    text-align: center;
+    margin-left: 470px;
+    margin-right: 470px;
+    margin-bottom: 1px;
+    padding: 5px;
+    max-width: 400px;
+    height: 140px;
+    background-color: #ced8e3;
+    text-align: center;
+    
+}
+.text span{
+    color: #336699;
+}
+.text p{
+    color: #4674a2;
+    font-weight: bold;
+    font-size:x-large;
+    background-color: #a7bcd0;
+    opacity: 1;
+    margin-left: 370px;
+    margin-right: 370px;
+    height: 60px;
+    margin-top: -9px;
+    padding: 8px;
+}
+
+.form-container form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 15rem;
+    left: 400px;
+    background: #336699;
+    padding: 30px;
+    border-radius: 0.5rem;
+}
+
+.input-box{
+    flex: 1 1 7rem; 
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box span{
+    font-weight: 500;
+    color: #ced8e3;
+}
+
+.input-box input{
+    padding: 7px;
+    outline: none;
+    border-color: darkgrey;
+    color:#4674a2;
+    background: white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-container form .btn{
+    flex: 1 1 5rem;
+    padding: 10px 34px;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(23, 64, 142);
+    color:#ced8e3;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.form-container form .btn:hover{
+    background: #4674a2;
+}
