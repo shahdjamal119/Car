@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase : {
+    apiKey: "AIzaSyB2Bmtrpi-8HFngr0Tw6tBP-w2X0zDflUY",
+    authDomain: "authonti.firebaseapp.com",
+    databaseURL: "https://authonti-default-rtdb.firebaseio.com",
+    projectId: "authonti",
+    storageBucket: "authonti.appspot.com",
+    messagingSenderId: "888928132938",
+    appId: "1:888928132938:web:37e34870c024d797862bb3"
+  }
 };
 
 /*
