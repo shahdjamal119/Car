@@ -12,9 +12,6 @@ import { GoodsService } from 'src/app/services/goods.service';
 export class VarifyEmailComponent implements OnInit {
 
  goods: Good[] = [
-   {name:'skoda',price:5,photourl:'assets/car3.jpg'},
-   {name:'skoda',price:5,photourl:'assets/asa.jpeg'},
-   
  ];
   goodsOpservable!: Subscription;
   Add:number = -1;
