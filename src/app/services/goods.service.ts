@@ -8,5 +8,8 @@ export class GoodsService {
 
   constructor(private fs:AngularFirestore) { }
   
-  getAllgoods(){return this.fs.collection('carso').valueChanges()}
-}
+  getAllUsers() {
+    return new Promise<any>((resolve)=> {
+    this.fs.collection('carso').valueChanges({ idField: 'id' }).subscribe(users => resolve(users));
+    })
+   }}

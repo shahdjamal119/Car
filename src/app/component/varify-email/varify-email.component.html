@@ -81,15 +81,13 @@
         </div>
        <div class="body">
            <div class="row">
-               <div class="col col-12 col-lg-6 col-lg-3" *ngFor="let good of goods; index as i">
-                <div class="card" style="width: 18rem;">
-                    <img [src]="good .photourl" class="card-img-top" >
+               <div class="col col-12 col-lg-6 col-lg-3" *ngFor="let good of am; index as i" >
+                <div class="card" style="width: 19rem;" >
+                    <img [src]="good.photourl" class="card-img-top" >
                     <div class="card-body">
                       <h5 class="card-title">{{good.name }}</h5>
                       <p class="card-text" >{{good.price}}</p>
-                      <p>abood</p>
-                      <button href="#" class="btn btn-primary" (click)="addToCart(good.id)">Rent a car</button>
-                    </div>
+                      <button href="#" class="btn btn-primary" (click)="addToCart(good.id)">Rent a car</button></div>
                   </div>
                </div>
            </div>

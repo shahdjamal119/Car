@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +12,8 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
 import { ForgetPasswordComponent } from './component/forget-password/forget-password.component';
 import { VarifyEmailComponent } from './component/varify-email/varify-email.component';
+import { CardetailsComponent } from './component/cardetails/cardetails.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,10 @@ import { VarifyEmailComponent } from './component/varify-email/varify-email.comp
     RegisterComponent,
     DashboardComponent,
     ForgetPasswordComponent,
-    VarifyEmailComponent
+    VarifyEmailComponent,
+    CardetailsComponent,
+    
+   
   ],
   imports: [
     BrowserModule,
