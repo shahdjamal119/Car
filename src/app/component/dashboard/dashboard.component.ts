@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from '@angular/core';
 import { Good } from 'src/app/interfaces/good.interface';
 import { CrudService } from 'src/app/service/crud.service';
@@ -15,11 +14,12 @@ export class DashboardComponent implements OnInit {
     id: '',
     name: '',
     price: 0,
+    photourl: ''
   };
   id: string = '';
   name: string = '';
   price: number = 0;
-
+  photourl: string = '';
   constructor(private crudService: CrudService) { }
 
   ngOnInit(): void {
@@ -40,9 +40,11 @@ export class DashboardComponent implements OnInit {
     this.id = '';
     this.name = '';
     this.price = 0;
+    this.photourl = ''
     this.carObj.id = '';
     this.carObj.name = '';
     this.carObj.price = 0;
+    this.carObj.photourl = ''
   }
 
   addCar() {
@@ -53,6 +55,7 @@ export class DashboardComponent implements OnInit {
     this.carObj.id = '';
     this.carObj.name = this.name;
     this.carObj.price = this.price
+    this.carObj.photourl = this.photourl
     this.crudService.addCar(this.carObj);
     this.resetForm();
   }
