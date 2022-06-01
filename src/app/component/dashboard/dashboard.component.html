@@ -1,1 +1,47 @@
-<h1>Welcome to POwer Team</h1>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-4 mt-5">
+            <div class="card border-0 shadow p-3">
+                <div class="form-floating mb-3 tetx-center">
+                    <h5 class="text-center text-warning">Add Car</h5>
+                </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="Name" name="name" [(ngModel)]="name">
+                        <label for="firstname">Car name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="Price" name="price" [(ngModel)]="price">
+                        <label for="lastName">Car price</label>
+                    </div>
+                    <button type="button" class="btn btn-outline-success" (click)="addCar()">Add Car</button>
+            </div>
+        </div>
+        <div class="col-md-8 mt-2">
+            <h5 class="text-danger"> Car List</h5>
+            <div class="card p-3 shadow">
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Car name</th>
+                            <th scope="col">Car price</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let car of cars">
+                            <td >{{car.name}}</td>
+                            <td>{{car.price}}</td>
+                            <td>
+                                <button class="btn btn-outline-danger" (click)="deleteCar(car)">Delete</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
