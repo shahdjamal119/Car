@@ -1,1 +1,18 @@
-<p>cardetails works!</p>
+<table class="table table-hover">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">name</th>
+          <th scope="col">price</th>
+          <th scope="col">image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="carD">
+          <th scope="row">1</th>
+          <td>{{carD.name}}</td>
+          <td>{{carD.price}}</td>
+          <td><img width="50px" src="{{carD.photourl}}" alt=""></td>
+        </tr>
+      </tbody>
+  </table>
