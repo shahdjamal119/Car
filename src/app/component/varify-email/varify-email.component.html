@@ -1,0 +1,134 @@
+<body>
+    <!-- Header -->
+    <header>
+        <a class="logo"><img src="../../../assets/img/jeep.png" alt=""></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a [routerLink]="['/Home']">Home</a></li>
+            <li><a [routerLink]="['/Ride']">Ride</a></li>
+            <li><a [routerLink]="['/Services']">Services</a></li>
+            <li><a [routerLink]="['/About']">About</a></li>
+            <li><a [routerLink]="['/Reviews']">Reviews</a></li>
+        </ul>
+        <div class="header-btn">
+            <li><a [routerLink]="['/login']">Log Out</a></li>
+        </div>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home" style="background-image: url('../../../assets/img/Car\ Website\ –\ 1@2x.png');">
+        <div class="text">
+            <h1><span >Looking</span> to <br>rent a car</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adi <br> pisicing elit. Fuga, ut qui.</p>
+            
+        </div>
+
+        <div class="form-container">
+            <form action="">
+                <div class="input-box">
+                    <span>Location</span>
+                    <input type="search" name="" id="" placeholder="Search Places">
+                </div>
+                <div class="input-box">
+                    <span>Pick-Up Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <div class="input-box">
+                    <span>Return Date</span>
+                    <input type="date" name="" id="">
+                </div>
+                <input type="submit" name="" id="" class="btn">
+            </form>
+        </div>
+    </section>
+    <!-- Ride -->
+    <section class="ride" id="ride">
+        <div class="heading">
+            <span>How Its Work</span>
+            <h1>Rent With 3 Easy Steps</h1>
+        </div>
+        <div class="ride-container">
+            <div class="box">
+                <i class='bx bxs-map'></i>
+                <h2>Choose A Location</h2>
+                <p> The place where the renter wants to collect the car must be specified </p>
+            </div>
+
+            <div class="box">
+                <i class='bx bxs-calendar-check' ></i>
+                <h2>Pick-Up Date</h2>
+                <p>You must specify the time at which the car is to be received</p>
+            </div>
+
+            <div class="box">
+                <i class='bx bxs-calendar-star'></i>
+                <h2>Book A Car</h2>
+                <p>Select the vehicle delivery time</p>
+            </div>
+        </div>
+    </section>
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="heading">
+            <span>Best Services</span>
+        </div>
+       <div class="body heading">
+           <div class="container d-flex flex-wrap align-items-cente">
+               <div class="" *ngFor="let good of am; index as i" >
+                <div class="card">
+                    <img [src]="good.photourl" class="card-img-top" >
+                    <div class="card-body heading">
+                      <h5 class="card-title heading">{{good.name }}</h5>
+                      <p class="card-text heading" >{{good.price}}</p>
+                      <button href="#" class="btn btn-primary heading" (click)="addToCart(good.id)">Rent a car</button></div>
+                  </div>
+               </div>
+           </div>
+       </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="heading">
+            <span>About Us</span>
+            <h1>Best Customer Experience</h1>
+        </div>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="../../../assets/img/about.png" alt="">
+            </div>
+            <div class="about-text">
+                <span>About Us</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sit optio consectetur voluptate repellat. Nulla harum ipsa nihil voluptate iste omnis distinctio maiores iure voluptatem consequatur rerum quidem asperiores eaque at animi, optio hic?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt labore aliquam dicta quam est totam porro repellat iste.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews -->
+    <section class="reviews" id="reviews">
+        <div class="heading">
+            <span>Reviews</span>
+           
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem minima at fugiat totam labore voluptatum ipsum veritatis sunt!</p>
+            </div>
+
+              
+            
+        
+    </section>
+    <!-- Nwsletter -->
+    <section class="newsletter">
+        <h2>Subscribe To Newsletter</h2>
+        <div class="box">
+            <input type="text" placeholder="Enter  Your Email...">
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </section>
+
+<!-- ScrollReveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Link To JS -->
+    <script src="main.js"></script>
+</body>
