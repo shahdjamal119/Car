@@ -1,25 +1,25 @@
 <body>
     <!-- Header -->
     <header>
-        <a href="#" class="logo"><img src="../../../assets/img/jeep.png" alt=""></a>
+        <a class="logo"><img src="../../../assets/img/jeep.png" alt=""></a>
 
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#ride">Ride</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#reviews">About</a></li>
-            <li><a href="#reviews">Reviews</a></li>
+            <li><a [routerLink]="['/Home']">Home</a></li>
+            <li><a [routerLink]="['/Ride']">Ride</a></li>
+            <li><a [routerLink]="['/Services']">Services</a></li>
+            <li><a [routerLink]="['/About']">About</a></li>
+            <li><a [routerLink]="['/Reviews']">Reviews</a></li>
         </ul>
         <div class="header-btn">
-          
+            <li><a [routerLink]="['/login']">Log Out</a></li>
         </div>
     </header>
     <!-- Home -->
     <section class="home" id="home" style="background-image: url('../../../assets/img/Car\ Website\ –\ 1@2x.png');">
         <div class="text">
-            <h1><span>Looking</span> to <br>rent a car</h1>
+            <h1><span >Looking</span> to <br>rent a car</h1>
             <p>Lorem ipsum dolor sit amet consectetur adi <br> pisicing elit. Fuga, ut qui.</p>
             
         </div>
@@ -73,15 +73,15 @@
         <div class="heading">
             <span>Best Services</span>
         </div>
-       <div class="body">
-           <div class="row">
-               <div class="col col-12 col-lg-6 col-lg-3" *ngFor="let good of am; index as i" >
-                <div class="card" style="width: 19rem;" >
+       <div class="body heading">
+           <div class="container d-flex flex-wrap align-items-cente">
+               <div class="" *ngFor="let good of am; index as i" >
+                <div class="card">
                     <img [src]="good.photourl" class="card-img-top" >
-                    <div class="card-body">
-                      <h5 class="card-title">{{good.name }}</h5>
-                      <p class="card-text" >{{good.price}}</p>
-                      <button href="#" class="btn btn-primary" (click)="addToCart(good.id)">Rent a car</button></div>
+                    <div class="card-body heading">
+                      <h5 class="card-title heading">{{good.name }}</h5>
+                      <p class="card-text heading" >{{good.price}}</p>
+                      <button href="#" class="btn btn-primary heading" (click)="addToCart(good.id)">Rent a car</button></div>
                   </div>
                </div>
            </div>

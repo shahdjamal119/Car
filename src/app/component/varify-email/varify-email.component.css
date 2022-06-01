@@ -14,7 +14,6 @@
     --text-color: rgb(255, 255, 255);
     --gradient: linear-gradient(#fe5b3d, #ffac38);
   }
-  
   /* Custom Scroll Bar */
   html::-webkit-scrollbar {
     width: 0.5rem;
@@ -168,6 +167,17 @@
   .heading h1 {
     font-size: 2rem;
   }
+  .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.row img{
+  width: 100%;
+}
+.card{
+  width: 30%;
+}
   .ride-container {
     display: grid;
     align-items: center;
@@ -357,4 +367,22 @@
     padding: 10px;
     font-size: 21px;
   }
-  
+  .card{
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    transition: all linear 200ms;
+  }
+  .card:hover{
+    transform: scale(1.1);
+    transition: all linear 200ms;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+    cursor: pointer;
+  }
